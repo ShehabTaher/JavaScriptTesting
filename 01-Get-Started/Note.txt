@@ -1,0 +1,40 @@
+* What is Testing ? :  - Verify "if something works as intended"
+                       - Types : 1. Manual testing =>
+                                                      - tedious & cumbersome
+                                                      - Error-prone
+                                                      - Often incomplete (not all scenarios covered)
+                                 2.Automated testing =>
+                                                       - Initial effort (write tests), no effort thereafter.
+                                                       -Predictable & consistent
+                                                       - High / complete code & scenario coverage can be achieved
+* Unit test :
+              => Unit : - A building block of your app
+                        - Ideally, the smallest possible building block
+                        - e.g. , a function , a class , a component , ...
+                        - APP = combination of all units
+                        - if all units were tested , the overall app should work -> backed up by integration tests
+              => Why ? : - Avoid endless amounts of manual testing
+                         - Allows you to cover (close to) 100% of your code & scenarios
+                         - code changes are tested against all scenarios (almost) instantly
+                         - Write cleaner & better code (because testing then becomes easier)
+* Types of Testing : 1. Unit Testing : - Test the individual building blocks of an application
+                                       - Every building block (unit) is tested standalone
+                                       ==> if all building blocks work, the overall app works
+                     2. Integration Testing : - test the combination of building blocks
+                                              - Verify if building blocks (unit) work together
+                                              ==> Even if all units work standalone, the combination could fail
+                     3. End-to-End (E2E) Testing : - test entire flows and application features
+                                                   - test the actual "things" real users would do
+                                                   ==> Real users use your app and its features, not individual units
+                     ==> You should combine all kinds of all tests :
+                            # Unit : - Quickly spot and pinpoint breaking changes & errors
+                                     - Ignore actual user flows and interferences
+                            # Integration : - Test (parts of) processes & combinations of units
+                                            - Spotting the exact root of an error can be tricky
+                            # End-to-End (E2E) : - Test realistic user flows & behaviors
+                                                 - Covering all possible behaviors can be challenging
+
+* Test-Driven Development (TDD) : - A framework / philosophy for writing tests
+                                  - Steps : 1. Write a failing test first
+                                            2. Implement the code to make the test succeed
+                                            3. Refactor
