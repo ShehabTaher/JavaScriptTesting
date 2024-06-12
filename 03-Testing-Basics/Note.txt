@@ -1,0 +1,13 @@
+* The Basics :
+              => Understanding Unit Testing Fundamentals
+                 - Creating Unit Tests
+                 - AAA - Arrange, Act, Assert
+
+* Command : - npm start : to start project
+          - npm test : to test project
+          - npm run test:watch : to test project if any changes are made
+
+* AAA - Arrange , Act, Assert :
+    => Arrange: Define the testing environment & values
+    => Act: Run the actual code /  function that should be tested
+    => Assert: Evaluate the produced value / result and compare it to the expected value / result

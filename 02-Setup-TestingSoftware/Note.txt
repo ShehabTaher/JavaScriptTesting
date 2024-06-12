@@ -1,0 +1,17 @@
+* Adjust the Development Environment :
+==> Testing Setup : - application setup & code
+                    - Generally independent setup
+                    - All you need for manual testing
+                    - it can (and typically will) be integrated
+                    - e.g. , based on webpack , Vite , ...
+                    - Automated tests : = Test Runner :
+                                          . Runs your tests (i.e., the testing code)
+                                          . Automatically detects testing code
+                                          . displays result
+                                          . e.g., Jest, Karma
+                                        + Assertion Library :
+                                          . used to define expected outcomes
+                                          . checks whether expectations are met
+                                          . Supports all kinds of expectations and modes (sync / async)
+                                          . e.g., Jest, Chai
+==> Installing Vitest : npm install --save-dev vitest
